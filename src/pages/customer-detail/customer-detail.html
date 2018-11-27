@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Customer Detail</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list >
+      <ion-item>
+        <ion-label floating>Name</ion-label>
+        <ion-input type="text" [(ngModel)]="customer.ContactName" [readonly]="!isEditable"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Title</ion-label>
+        <ion-input type="text" [(ngModel)]="customer.ContactTitle" [readonly]="!isEditable"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Company</ion-label>
+        <ion-input type="text" [(ngModel)]="customer.CompanyName" [readonly]="!isEditable"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Address</ion-label>
+        <ion-input type="text" [(ngModel)]="customer.Address" [readonly]="!isEditable"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>City</ion-label>
+        <ion-input type="text" [(ngModel)]="customer.City" [readonly]="!isEditable"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Region</ion-label>
+        <ion-input type="text" [(ngModel)]="customer.Region" [readonly]="!isEditable"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>PostalCode</ion-label>
+        <ion-input type="text" [(ngModel)]="customer.PostalCode" [readonly]="!isEditable"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Country</ion-label>
+        <ion-input type="text" [(ngModel)]="customer.Country" [readonly]="!isEditable"></ion-input>
+      </ion-item>
+
+    </ion-list>
+    <button ion-button full (click)="onSave()" *ngIf="isEditable">Save</button>
+</ion-content>

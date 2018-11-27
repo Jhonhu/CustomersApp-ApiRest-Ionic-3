@@ -4,6 +4,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { CustomerDetailPage } from '../pages/customer-detail/customer-detail';
+import { CustomerListPage } from '../pages/customer-list/customer-list';
+
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -19,4 +23,3 @@ export class MyApp {
     });
   }
 }
-
